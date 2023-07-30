@@ -1,0 +1,142 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form-title {
+    color: black;
+    font-size: $main-heading;
+  }
+}
+
+.form.generate-pw {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  // border: 2px solid gray;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  
+  p {
+    text-align: center;
+  }
+
+  button[type="submit"] {
+    margin: 20px 10px;
+    font-size: $sub-heading;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid $secondary;
+    background-color: $tertiary;
+    cursor: pointer;
+    color: white;
+  }
+
+  button[type="submit"]:hover {
+    transform: scale(1.05);
+  }
+
+  button[type="submit"]:active {
+    transform: scale(0.99);
+  }
+
+  .btn.gen-pw-copy {
+    position: absolute;
+  }
+}
+
+.edit-data {
+
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  .form-edit-data {
+
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    font-size: $sub-heading;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+
+    .errors {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin: 5px;
+      font-size: 14px;
+      color: red;
+      list-style-type: disc;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .user-inputs {
+      margin: 20px 0px;
+      gap: 10px;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        color: rgb(100, 100, 100);
+      }
+
+      input {
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 2px solid rgb(0, 0, 0);
+        font-size: $sub-heading;
+        padding: 5px;
+      }
+
+      input::placeholder {
+        color: rgb(180, 180, 180);
+      }
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5px;
+      
+
+      button {
+        margin: 5px;
+        font-size: $sub-heading;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid $tertiary;
+        background-color: $secondary;
+        cursor: pointer;
+        width: 40%;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+      }
+
+      button:active {
+        transform: scale(0.99);
+      }
+
+      .btn-close-form {
+        color: white;
+        background-color: rgb(214, 97, 97);
+        border: 2px solid rgb(187, 49, 49);
+      }
+    }
+  }
+}

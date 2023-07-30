@@ -1,0 +1,61 @@
+//var
+@import '_variables';
+//resets
+@import '_normalize';
+
+//components
+@import './component/_form.scss';
+@import './component/_input.scss';
+@import './component/_img.scss';
+@import './component/_button.scss';
+
+//layouts
+@import './sidebar.scss';
+@import './header.scss';
+
+body {
+  font-family: $base-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.user-landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  header {
+    width: 100%;
+    background-color: $fourth;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    .header-wrapper {
+      margin: 10px 0;
+    }
+  }
+
+  .content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 10px;
+    }
+
+    h1, h3 {
+      margin: 5px;
+    }
+  }
+}

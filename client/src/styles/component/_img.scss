@@ -1,0 +1,21 @@
+@import '../_variables';
+
+.img {
+
+}
+
+.img.logo {
+  height: $base-icon-size
+}
+
+.img.icon {
+  height: 1.5rem;
+}
+
+.img.icon.copy {
+  height: 1.5rem;
+}
+
+.img.svg {
+  height: 50px;
+}

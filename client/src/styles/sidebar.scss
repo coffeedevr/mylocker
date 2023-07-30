@@ -1,0 +1,49 @@
+@import '_variables';
+@import '_normalize';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 300px;
+  background-color: $fourth;
+  color: $default-sidebar-color;
+
+  nav {
+    
+    ul {
+
+      font-size: $sub-heading;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding: 5px 15px 5px 10px;
+          color: $default-sidebar-color;
+          flex: 1;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  #logout {
+    text-decoration: none;
+    color: $default-sidebar-color;
+    padding: 5px 15px 5px 10px;
+    align-self: flex-start;
+  }
+  
+  #logout:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  background-color: $fifth;
+}

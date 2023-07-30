@@ -1,0 +1,19 @@
+.copy {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.copy:active {
+  transform: scale(0.95)
+}
+
+button[type="submit"] {
+  margin: 20px 10px;
+  font-size: $sub-heading;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid $tertiary;
+  background-color: $secondary;
+  cursor: pointer;
+}
